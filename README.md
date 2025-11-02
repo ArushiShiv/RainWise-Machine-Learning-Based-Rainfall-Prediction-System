@@ -1,4 +1,4 @@
-# RainWise-Machine-Learning-Based-Rainfall-Prediction-System
+# RainWise-MachineL earning Based Rainfall Prediction System
 
 
 # Overview
