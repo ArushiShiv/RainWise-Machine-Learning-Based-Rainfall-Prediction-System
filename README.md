@@ -9,15 +9,15 @@ The study explores data preprocessing, exploratory data analysis (EDA), and comp
 
 # Dataset Source
 
-Dataset: Australian Weather Dataset (weatherAUS.csv)
+=> Dataset: Australian Weather Dataset (weatherAUS.csv)
 
-Size: ~145,000 rows and 23 columns
+=> Size: ~145,000 rows and 23 columns
 
-Features: Includes daily weather observations such as temperature, humidity, wind speed, pressure, and evaporation.
+=> Features: Includes daily weather observations such as temperature, humidity, wind speed, pressure, and evaporation.
 
-Target Variable: RainTomorrow (Yes/No)
+=> Target Variable: RainTomorrow (Yes/No)
 
-Preprocessing Steps:
+>> Preprocessing Steps:
 
 Removed irrelevant or high-missing-value columns (Evaporation, Sunshine, Cloud9am, Cloud3pm, Date, Location, RISK_MM).
 
@@ -31,23 +31,23 @@ Split the dataset into training (80%) and testing (20%) subsets.
 
 The project followed a structured machine learning workflow:
 
-Exploratory Data Analysis (EDA):
+=> Exploratory Data Analysis (EDA):
 
 Identified patterns between humidity, wind, and rainfall.
 
 Visualized correlations using heatmaps and pair plots.
 
-Model Development:
+=> Model Development:
 
 Compared algorithms such as Logistic Regression, XGBoost, LightGBM, CatBoost, and Random Forest.
 
 Used Random Forest for final deployment due to its high accuracy and stability.
 
-Model Optimization:
+=> Model Optimization:
 
 Tuned hyperparameters (max_depth, n_estimators) for improved generalization.
 
-Model Persistence:
+=> Model Persistence:
 
 Stored model and preprocessing artifacts (rainfall_rf_model.pkl, imputer.pkl, label_encoders.pkl, feature_order.pkl) using joblib.
 
@@ -57,20 +57,19 @@ Logistic Regression	78%	74%	70%	72%
 XGBoost	84%	81%	79%	80%
 LightGBM	85%	83%	81%	82%
 Random Forest (Final)	86%	84%	83%	83.5%
-=> Steps to Run the Code
 
+=> Steps to Run the Code
 
 Install dependencies:
 
 pip install -r requirements.txt
-
 
 Run the model training script:
 
 python rainfall_model.py
 
 
-(Optional) Launch the Streamlit app for interactive prediction (if included later):
+=> Launch the Streamlit app for interactive prediction (if included later):
 
 streamlit run app.py
 
@@ -84,7 +83,7 @@ Visualized feature importance for interpretability.
 
 The Random Forest model achieved the best trade-off between accuracy and overfitting.
 
-Example Visualization
+=> Example Visualization
 
 Feature Importance Plot: Demonstrates which factors most influence rainfall.
 
