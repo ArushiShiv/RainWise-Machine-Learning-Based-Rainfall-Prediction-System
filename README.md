@@ -51,18 +51,13 @@ Model Persistence:
 
 Stored model and preprocessing artifacts (rainfall_rf_model.pkl, imputer.pkl, label_encoders.pkl, feature_order.pkl) using joblib.
 
-# Method Comparison (Illustrative Summary)
+# Method Comparison 
 Model	Accuracy	Precision	Recall	F1-Score
 Logistic Regression	78%	74%	70%	72%
 XGBoost	84%	81%	79%	80%
 LightGBM	85%	83%	81%	82%
 Random Forest (Final)	86%	84%	83%	83.5%
 => Steps to Run the Code
-
-Clone the repository:
-
-git clone https://github.com/<your-username>/rainfall-prediction.git
-cd rainfall-prediction
 
 
 Install dependencies:
